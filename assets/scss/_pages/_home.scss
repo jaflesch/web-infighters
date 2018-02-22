@@ -1,0 +1,6 @@
+#game-area-wrapper {
+	@include size(1600px, $height-relative);
+	background: $background;
+	font-size: 0;
+	margin: 50px auto;
+}

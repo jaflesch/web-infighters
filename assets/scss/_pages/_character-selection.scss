@@ -1,0 +1,21 @@
+// vars
+$char-info-width: 360px;
+
+#character-selection {
+	.char-info {
+		@include size($char-info-width, $height-relative);
+		position: relative;
+		display: inline-block;
+		background: #000;
+		border-left: 6px solid $blue;
+		border-right: 6px solid $blue;
+	}
+
+	.char-group {
+		@include size(calc(100% - #{$char-info-width} - 34px), $height-relative);
+		display: inline-block;
+		position: relative;
+		background: #fff;
+		float: right;
+	}
+}
